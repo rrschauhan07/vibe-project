@@ -11,23 +11,23 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Portfolio | Your Name',
+    default: 'Portfolio | Rishi Raj Singh Chauhan',
     template: '%s | Portfolio'
   },
   description: 'Creative developer and designer building modern web experiences',
   keywords: ['portfolio', 'developer', 'designer', 'web development'],
-  authors: [{ name: 'Your Name' }],
+  authors: [{ name: 'Rishi Raj Singh Chauhan' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://yourportfolio.com',
-    title: 'Portfolio | Your Name',
+    title: 'Portfolio | Rishi Raj Singh Chauhan',
     description: 'Creative developer and designer building modern web experiences',
     siteName: 'Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Portfolio | Your Name',
+    title: 'Portfolio | Rishi Raj Singh Chauhan',
     description: 'Creative developer and designer building modern web experiences',
   },
   robots: {

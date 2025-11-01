@@ -30,7 +30,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="gradient-text">Your Name</span>
+              <span className="gradient-text">Rishi Raj Singh Chauhan</span>
             </motion.h1>
 
             {/* Tagline */}
