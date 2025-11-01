@@ -40,7 +40,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl sm:text-2xl lg:text-3xl text-charcoal-600 mb-8 font-light"
             >
-              AI Developer and Cybersecurity Expert
+              AI Developer & Pentester focused on machine learning, secure system design, and adversary-style testing to find and fix critical vulnerabilities before they&apos;re exploited.
             </motion.p>
 
             {/* CTA Button */}
@@ -91,10 +91,10 @@ export default function Home() {
               About Me
             </h2>
             <p className="text-lg text-charcoal-600 leading-relaxed mb-4">
-              I&apos;m a passionate developer and designer with a focus on creating
-              beautiful, functional, and user-centric web experiences. I combine
-              technical expertise with creative vision to build digital products
-              that make a difference.
+              I&apos;m an AI Developer & Pentester specializing in machine learning
+              solutions, secure system architecture, and proactive security testing.
+              I combine cutting-edge AI technologies with security-first principles
+              to build robust, intelligent systems that are both innovative and protected.
             </p>
             <p className="text-lg text-charcoal-600 leading-relaxed">
               When I&apos;m not coding, you&apos;ll find me exploring new technologies,

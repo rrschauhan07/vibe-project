@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://yourportfolio.com',
     title: 'Portfolio | Rishi Raj Singh Chauhan',
-    description: 'AI Developer and Cybersecurity Expert building modern solutions',
+    description: 'AI Developer & Pentester focused on machine learning, secure system design, and adversary-style testing',
     siteName: 'Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Portfolio | Rishi Raj Singh Chauhan',
-    description: 'AI Developer and Cybersecurity Expert building modern solutions',
+    description: 'AI Developer & Pentester focused on machine learning, secure system design, and adversary-style testing',
   },
   robots: {
     index: true,
