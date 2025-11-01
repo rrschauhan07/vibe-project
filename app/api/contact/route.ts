@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-// Initialize Resend with API key from environment variable
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Initialize Resend only when API key is available (lazy initialization)
+function getResend() {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) return null
+  return new Resend(apiKey)
+}
 
 // Contact form API route
 export async function POST(request: NextRequest) {
@@ -28,7 +32,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Check if Resend API key is configured
-    if (!process.env.RESEND_API_KEY) {
+    const resend = getResend()
+    if (!resend) {
       console.error('RESEND_API_KEY is not set')
       // Still return success to user, but log the error
       return NextResponse.json(
@@ -41,7 +46,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Get the receiving email from environment variable or use default
-    const receivingEmail = process.env.CONTACT_EMAIL || 'hello@example.com'
+    const receivingEmail = process.env.CONTACT_EMAIL || 'rrschauhan20@gmail.com'
     const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
 
     // Send email using Resend
