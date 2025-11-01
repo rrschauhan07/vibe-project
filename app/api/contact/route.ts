@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
 
     // Get the receiving email from environment variable or use default
     // Note: Must be the verified email address in your Resend account
-    const receivingEmail = process.env.CONTACT_EMAIL || 'rrschauhan999@gmail.com'
+    const receivingEmail = process.env.CONTACT_EMAIL || 'rrschauhan20@gmail.com'
     const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
 
     // Send email using Resend
