@@ -58,10 +58,10 @@ export default function ContactPage() {
                     Email
                   </h3>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:rrschauhan20@gmail.com"
                     className="text-lg text-charcoal-900 hover:text-electric-600 transition-colors"
                   >
-                    hello@example.com
+                    rrschauhan20@gmail.com
                   </a>
                 </div>
 
