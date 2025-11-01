@@ -159,6 +159,23 @@ await resend.emails.send({
 })
 ```
 
+## Git & GitHub Setup
+
+The project is already initialized with Git. To connect it to GitHub:
+
+1. **Create a new repository on GitHub**:
+   - Go to [GitHub](https://github.com) and create a new repository
+   - Don't initialize it with a README (we already have one)
+
+2. **Connect your local repository to GitHub**:
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git branch -M main
+git push -u origin main
+```
+
+Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub username and repository name.
+
 ## Deployment
 
 ### Vercel (Recommended)
