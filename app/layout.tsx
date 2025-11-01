@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'Portfolio | Rishi Raj Singh Chauhan',
     template: '%s | Portfolio'
   },
-  description: 'Creative developer and designer building modern web experiences',
+  description: 'AI Developer and Cybersecurity Expert building modern solutions',
   keywords: ['portfolio', 'developer', 'designer', 'web development'],
   authors: [{ name: 'Rishi Raj Singh Chauhan' }],
   openGraph: {
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://yourportfolio.com',
     title: 'Portfolio | Rishi Raj Singh Chauhan',
-    description: 'Creative developer and designer building modern web experiences',
+    description: 'AI Developer and Cybersecurity Expert building modern solutions',
     siteName: 'Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Portfolio | Rishi Raj Singh Chauhan',
-    description: 'Creative developer and designer building modern web experiences',
+    description: 'AI Developer and Cybersecurity Expert building modern solutions',
   },
   robots: {
     index: true,
