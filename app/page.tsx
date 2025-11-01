@@ -149,7 +149,7 @@ export default function Home() {
             <p className="text-xl text-charcoal-300 mb-8">
               Have a project in mind? I&apos;d love to hear about it.
             </p>
-            <Button href="/contact" variant="secondary" className="text-lg px-8 py-4">
+            <Button href="/contact" variant="primary" className="text-lg px-8 py-4">
               Start a Conversation
             </Button>
           </motion.div>
