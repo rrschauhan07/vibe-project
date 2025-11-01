@@ -72,23 +72,18 @@ export default function ContactPage() {
                   </h3>
                   <div className="flex flex-wrap gap-4">
                     <SocialLink
-                      href="https://github.com"
+                      href="https://github.com/rrschauhan07"
                       label="GitHub"
                       icon="↗"
                     />
                     <SocialLink
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/rrsc20"
                       label="LinkedIn"
                       icon="↗"
                     />
                     <SocialLink
-                      href="https://twitter.com"
+                      href="https://x.com/rrschauhan07"
                       label="Twitter"
-                      icon="↗"
-                    />
-                    <SocialLink
-                      href="https://dribbble.com"
-                      label="Dribbble"
                       icon="↗"
                     />
                   </div>

@@ -40,7 +40,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl sm:text-2xl lg:text-3xl text-charcoal-600 mb-8 font-light"
             >
-              AI Developer & Pentester focused on machine learning, secure system design, and adversary-style testing to find and fix critical vulnerabilities before they&apos;re exploited.
+              AI Developer and Cybersecurity Expert
             </motion.p>
 
             {/* CTA Button */}
