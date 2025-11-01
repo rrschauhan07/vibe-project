@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'Portfolio | Rishi Raj Singh Chauhan',
     template: '%s | Portfolio'
   },
-  description: 'AI Developer and Cybersecurity Expert building modern solutions',
+  description: 'AI Developer & Pentester focused on machine learning, secure system design, and adversary-style testing',
   keywords: ['portfolio', 'developer', 'designer', 'web development'],
   authors: [{ name: 'Rishi Raj Singh Chauhan' }],
   openGraph: {
