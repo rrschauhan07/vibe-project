@@ -126,38 +126,57 @@ Update:
 - Twitter card tags
 - Site URL
 
-### Contact Form
+### Contact Form Email Setup
 
-The contact form API route is located at `app/api/contact/route.ts`. Currently, it logs submissions. To make it functional:
+The contact form is configured to send emails using **Resend**. Follow these steps to receive contact form messages:
 
-1. **Add Email Service**: Integrate with services like:
-   - [Resend](https://resend.com)
-   - [SendGrid](https://sendgrid.com)
-   - [Nodemailer](https://nodemailer.com)
+#### 1. Create a Resend Account
 
-2. **Add Rate Limiting**: Prevent spam with services like:
-   - [Upstash](https://upstash.com)
-   - [Vercel Edge Config](https://vercel.com/docs/storage/edge-config)
+1. Go to [Resend.com](https://resend.com) and sign up for a free account
+2. The free tier includes 3,000 emails/month
 
-3. **Add Validation**: Consider adding:
-   - CAPTCHA verification
-   - Honeypot fields
-   - Server-side validation
+#### 2. Get Your API Key
 
-Example with Resend:
+1. Navigate to [API Keys](https://resend.com/api-keys) in your Resend dashboard
+2. Click "Create API Key"
+3. Name it (e.g., "Portfolio Contact Form")
+4. Copy the API key (starts with `re_...`)
 
-```typescript
-import { Resend } from 'resend'
+#### 3. Set Up Environment Variables
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+**For Local Development:**
 
-await resend.emails.send({
-  from: 'contact@yourdomain.com',
-  to: 'your-email@example.com',
-  subject: `New contact from ${name}`,
-  html: `<p>From: ${email}</p><p>${message}</p>`,
-})
+Create a `.env.local` file in the root directory:
+
+```bash
+RESEND_API_KEY=re_your_actual_api_key_here
+CONTACT_EMAIL=your-email@example.com
+RESEND_FROM_EMAIL=onboarding@resend.dev
 ```
+
+**For Vercel Deployment:**
+
+1. Go to your project on [Vercel Dashboard](https://vercel.com)
+2. Navigate to **Settings** → **Environment Variables**
+3. Add these variables:
+   - `RESEND_API_KEY` = your Resend API key
+   - `CONTACT_EMAIL` = your email where you want to receive messages
+   - `RESEND_FROM_EMAIL` = `onboarding@resend.dev` (for testing) or `contact@yourdomain.com` (for production)
+
+#### 4. Verify Your Domain (Production - Optional)
+
+For production, you can use your own domain:
+1. In Resend dashboard, go to **Domains**
+2. Add your domain and verify DNS records
+3. Update `RESEND_FROM_EMAIL` to use your domain: `contact@yourdomain.com`
+
+#### 5. Test the Contact Form
+
+1. Start your dev server: `npm run dev`
+2. Go to the contact page and submit a test message
+3. Check your email inbox (and spam folder) for the message
+
+**Note:** Messages are sent to the email address specified in `CONTACT_EMAIL`. The sender's email is included in the `replyTo` field so you can reply directly.
 
 ## Git & GitHub Setup
 
