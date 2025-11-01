@@ -153,7 +153,7 @@ export default function ContactForm() {
             >
               <p className="font-medium">✓ Message sent successfully!</p>
               <p className="text-sm mt-1">
-                I'll get back to you as soon as possible.
+                I&apos;ll get back to you as soon as possible.
               </p>
             </motion.div>
           )}

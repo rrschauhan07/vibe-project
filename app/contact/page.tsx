@@ -19,9 +19,9 @@ export default function ContactPage() {
               <span className="gradient-text">Get In Touch</span>
             </h1>
             <p className="text-xl text-charcoal-600 leading-relaxed">
-              I'm always open to discussing new projects, creative ideas, or
+              I&apos;m always open to discussing new projects, creative ideas, or
               opportunities to be part of your vision. Drop me a message and
-              I'll get back to you as soon as possible.
+              I&apos;ll get back to you as soon as possible.
             </p>
           </motion.div>
         </div>

@@ -91,13 +91,13 @@ export default function Home() {
               About Me
             </h2>
             <p className="text-lg text-charcoal-600 leading-relaxed mb-4">
-              I'm a passionate developer and designer with a focus on creating
+              I&apos;m a passionate developer and designer with a focus on creating
               beautiful, functional, and user-centric web experiences. I combine
               technical expertise with creative vision to build digital products
               that make a difference.
             </p>
             <p className="text-lg text-charcoal-600 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies,
+              When I&apos;m not coding, you&apos;ll find me exploring new technologies,
               contributing to open source, or sharing knowledge with the
               developer community.
             </p>
@@ -144,10 +144,10 @@ export default function Home() {
             className="max-w-2xl mx-auto"
           >
             <h2 className="text-4xl font-bold mb-4">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <p className="text-xl text-charcoal-300 mb-8">
-              Have a project in mind? I'd love to hear about it.
+              Have a project in mind? I&apos;d love to hear about it.
             </p>
             <Button href="/contact" variant="secondary" className="text-lg px-8 py-4">
               Start a Conversation
